@@ -1,0 +1,306 @@
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+/* body */
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+.navbar {
+    padding: 5px;
+    background-color: #919191;
+}
+
+.navbar button {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 3px;
+    font-size: 18px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 20px;
+    background-color: #c5c5c5;
+}
+
+.header-logo {
+    padding-right: 20px;
+}
+
+.header h1, .header h2 {
+    font-family: 'Arial', sans-serif;
+}
+
+.header h1 {
+    font-size: 36px;
+}
+
+.header h2 {
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.header h3 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/* services  */
+.services {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.services-title {
+    font-size: 28px;
+    text-align: center;
+}
+
+.services-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-work, .new-installations {
+    flex: 1;
+    text-align: center;
+}
+
+.service-work-title, .new-installations-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.service-work-list, .new-installations-list {
+    font-size: 24px;
+}
+
+.services h2, .services h3 {
+    margin-top: 20px;
+}
+
+.services ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+.services h3 {
+    font-size: 22px;
+    text-align: center;
+}
+
+/* why choose */
+.why-choose {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #c5c5c5;
+}
+
+.why-choose-left-column {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.why-choose-center-column {
+    flex: 2;
+    text-align: center;
+}
+
+.why-choose-right-column {
+    padding-left: 20px;
+}
+
+.why-choose h2 {
+    padding-bottom: 10px;
+    font-size: 28px;
+}
+
+.why-choose ol {
+    list-style: none;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.why-choose img {
+    padding: 5px;
+}
+
+/* company-info */
+.company-info {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+}
+
+.company-info-header {
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+.company-info-body, .mission-body {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.signature-body {
+    align-items: center;
+    padding-left: 10px;
+}
+
+.signature {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.signature-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.signature-list li {
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+/* copyright  */
+.footer {
+    background-color: #919191;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.back-to-top-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #3b3b3b;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: none; /* Initially hidden */
+}
+
+.back-to-top-button:hover {
+    background-color: rgb(102, 102, 102);
+}
+
+/* images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* For screens with a maximum width of 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar button {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Header */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .header h2 {
+        font-size: 18px;
+    }
+
+    /* Services */
+    .services-title {
+        font-size: 24px;
+    }
+    .services-columns {
+        flex-direction: column;
+    }
+    .service-work, .new-installations {
+        text-align: left;
+        margin: 0 10px;
+    }
+    .service-work-title, .new-installations-title {
+        font-size: 26px;
+    }
+    .service-work-list, .new-installations-list {
+        font-size: 20px;
+    }
+    .services h3 {
+        font-size: 18px;
+    }
+
+    /* Why Choose */
+    .why-choose {
+        flex-direction: column;
+    }
+    .why-choose-left-column, .why-choose-center-column, .why-choose-right-column {
+        flex: 1;
+        text-align: center;
+        margin: 0 10px;
+    }
+    .why-choose h2 {
+        font-size: 24px;
+    }
+    .why-choose ol {
+        font-size: 16px;
+    }
+
+    .why-choose img {
+        padding: 5px;
+        max-width: 100%;
+    }
+
+    /* Company Info */
+    .company-info-header {
+        font-size: 18px;
+    }
+    .company-info-body, .mission-body {
+        font-size: 14px;
+    }
+    .signature {
+        font-size: 16px;
+    }
+    .signature-list li {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    .footer {
+        font-size: 12px;
+    }
+}
